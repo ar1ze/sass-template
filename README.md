@@ -1,63 +1,49 @@
-# Sass Template - v2.0
+Of course, here is the provided text formatted in markdown.
 
-This is a template for a Sass project. Built with [Vite](https://vitejs.dev/).
+# Sass Template
 
-[![YouTube](https://img.shields.io/static/v1?label=&message=Watch%20on%20YouTube&labelColor=FFFFFF&color=FF0000&style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtu.be/GevImMd3o6c?si=qkwrVQYUANBCGlEH)
+This is a versatile template for organizing your Sass projects, providing a clear and efficient structure for styling.
 
-![Landing Page](/public/landing-page.png)
+-----
 
 ## How to use it
 
-1. Just download the `sass` folder
-2. Include it in your project.
-3. Start using Sass Template
+1.  Just download the `sass` folder.
+2.  Include it in your project.
+3.  Start using this Sass Template for your styling needs.
+
+-----
 
 ## Folder structure
 
-```bash
+```
 sass/
 ├── abstracts/
 │   ├── _variables.scss
 │   ├── _mixins.scss
 │   ├── _functions.scss
 │   ├── _placeholders.scss
-│   ├── _index.scss
+│   └── _index.scss
 ├── base/
-│   ├── _root.scss
 │   ├── _reset.scss
 │   ├── _global.scss
-│   ├── _index.scss
-├── pages/
-│   ├── _home.scss
-│   ├── _about.scss
-│   ├── ...
-│   ├── _index.scss
+│   └── _index.scss
 ├── layouts/
-│   ├── _header.scss
-│   ├── _footer.scss
-│   ├── _grid.scss
-│   ├── ...
-│   ├── _index.scss
+│   └── _index.scss
 ├── components/
-│   ├── _buttons.scss
-│   ├── _card.scss
-│   ├── ...
-│   ├── _index.scss
-├── utilities/
-│   ├── _accessibility.scss
-│   ├── _helpers.scss
-│   ├── _shame.scss
-│   ├── ...
-│   ├── _index.scss
-├── style.scss
+│   └── _index.scss
+├── utils/
+│   └── _index.scss
+└── style.scss
 ```
 
 The way files are ordered is important since it defines which style should override the other. So, I made this diagram to better illustrate it:
 
-![Order of SCSS files](/public/scss-files-order.png)
+*[Diagram illustrating style override order would be placed here]*
+
+-----
 
 ## Useful Links
 
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [Sass Documentation](https://sass-lang.com/documentation)
-- [Sass Guidelines](https://sass-guidelin.es/)
+  * [Sass Documentation](https://sass-lang.com/documentation)
+  * [Sass Guidelines](https://sass-guidelin.es/)
