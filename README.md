@@ -1,5 +1,3 @@
-Of course, here is the provided text formatted in markdown.
-
 # Sass Template
 
 This is a versatile template for organizing your Sass projects, providing a clear and efficient structure for styling.
@@ -21,8 +19,6 @@ sass/
 ├── abstracts/
 │   ├── _variables.scss
 │   ├── _mixins.scss
-│   ├── _functions.scss
-│   ├── _placeholders.scss
 │   └── _index.scss
 ├── base/
 │   ├── _reset.scss
@@ -34,16 +30,14 @@ sass/
 │   └── _index.scss
 ├── utils/
 │   └── _index.scss
-└── style.scss
+└── main.scss
 ```
-
-The way files are ordered is important since it defines which style should override the other. So, I made this diagram to better illustrate it:
-
-*[Diagram illustrating style override order would be placed here]*
 
 -----
 
-## Useful Links
+## Useful Links & Acknowledgements
 
-  * [Sass Documentation](https://sass-lang.com/documentation)
-  * [Sass Guidelines](https://sass-guidelin.es/)
+* [Sass Documentation](https://sass-lang.com/documentation)
+* [Sass Guidelines](https://sass-guidelin.es/)
+
+This template was adapted from the [technoph1le/sass-template](https://github.com/technoph1le/sass-template) project, which is distributed under the MIT License.
