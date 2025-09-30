@@ -31,7 +31,7 @@ $radius-full: 9999px; // circular/pill
 // ============================================
 $font-xs: 0.75rem; // 12px
 $font-sm: 0.875rem; // 14px
-$font-base: 1rem; // 16px
+$font-size-base: 1rem; // 16px
 $font-lg: 1.125rem; // 18px
 $font-xl: 1.25rem; // 20px
 $font-2xl: 1.5rem; // 24px
@@ -120,4 +120,4 @@ $z-notification: 1080;
 // PROJECT
 // ============================================
 
-$primary-font: sans-serif;
+$font-family-base: sans-serif;

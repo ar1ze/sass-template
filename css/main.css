@@ -60,8 +60,7 @@ h4 {
 }
 
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -85,4 +84,6 @@ textarea:not([rows]) {
 
 :target {
   scroll-margin-block: 5ex;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
