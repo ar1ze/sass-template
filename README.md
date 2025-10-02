@@ -17,12 +17,13 @@ This is a versatile template for organizing your Sass projects, providing a clea
 ```
 sass/
 ├── abstracts/
-│   ├── _variables.scss
-│   ├── _mixins.scss
 │   └── _index.scss
+│   ├── _mixins.scss
+│   ├── _variables.scss
 ├── base/
-│   ├── _reset.scss
+│   ├── _fonts.scss
 │   ├── _global.scss
+│   ├── _reset.scss
 │   └── _index.scss
 ├── layouts/
 │   └── _index.scss
