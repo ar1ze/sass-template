@@ -23,7 +23,6 @@ sass/
 ├── base/
 │   ├── _fonts.scss
 │   ├── _global.scss
-│   ├── _reset.scss
 │   └── _index.scss
 │   ├── _reset.scss
 ├── layouts/
