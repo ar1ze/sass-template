@@ -1,74 +1,56 @@
 # Sass & Webpack Project Starter
 
-This is a modern front-end project starter template, featuring a scalable 7-1 Sass architecture and using Webpack to bundle all assets (JavaScript, SCSS, images, fonts) for development and production.
-
----
-
-## Features 🚀
-
-  * **Webpack 5:** Bundles all your JavaScript and dependencies into a single file.
-  * **Sass Loader:** Compiles your SCSS to CSS and injects it directly into the DOM.
-  * **Dev Server:** A live-reloading development server (`webpack-dev-server`) for a smooth workflow.
-  * **Asset Handling:** Properly handles images, fonts, and other assets for the final build.
-  * **Scalable Sass Architecture:** Organized folders for variables, base styles, components, and layouts.
-
----
+A front-end starter template built with a scalable 7-1 Sass setup and Webpack for managing all your assets in development and production.
 
 ## Getting Started
 
-Follow these steps to get the project up and running on your local machine.
+Follow these steps to create a new project based on this template.
 
-1.  **Clone the repository**
+1.  **Create a new repository from this template**
+
+      * Click the green **`Use this template`** button on the GitHub page.
+      * Select **`Create a new repository`**.
+      * Give your new repository a name and create it.
+
+2.  **Clone your new repository**
+
+      * On the page of your newly created repository, click the `<> Code` button and copy the URL.
+      * Run the following command in your terminal:
+        ```bash
+        git clone https://github.com/your-username/your-new-repository-name.git
+        ```
+
+3.  **Navigate to the project directory**
 
     ```bash
-    git clone <your-repository-url>
+    cd your-new-repository-name
     ```
 
-2.  **Navigate to the project directory**
-
-    ```bash
-    cd <project-name>
-    ```
-
-3.  **Install dependencies**
+4.  **Install dependencies**
 
     ```bash
     npm install
     ```
 
----
+Now you are ready to run the development server with `npm start`\!
 
 ## Available Scripts
+After installing the dependencies, you can use these commands:
 
-Once the dependencies are installed, you can use the following commands:
+* **`npm start`**
+  Launches the development server at `http://localhost:8080` with live reloading.
+  Any changes in the `src` folder will automatically refresh the browser.
 
-  * **`npm start`**
-
-      * Starts the development server with live reloading at `http://localhost:8080`.
-      * The server watches for changes in your `src` files and automatically updates the browser.
-
-  * **`npm run build`**
-
-      * Creates a production-ready build of your project in the `dist` folder.
-      * This bundle is optimized and ready to be deployed to a web server.
-
----
+* **`npm run build`**
+  Builds an optimized production version of your project in the `dist` folder, ready for deployment.
 
 ## Sass Architecture
 
-The `scss` folder is structured to keep styles organized and maintainable. It follows a methodology similar to the 7-1 pattern.
-
-  * **`abstracts/`**: Holds Sass tools and helpers. Contains variables, functions, and mixins. No direct CSS output.
-  * **`base/`**: Contains boilerplate code for the project, including resets, typographic rules, and global styles.
-  * **`components/`**: Contains styles for reusable UI components. Each file represents a specific component.
-      * `_button.scss`: Styles for button elements.
-  * **`layouts/`**: Contains styles for major parts of the site's layout.
-      * `_header.scss`: Styles for the site header.
-      * `_sidebar.scss`: Styles for the navigation sidebar.
-      * `_main.scss`: Styles for the main content area.
-  * **`main.scss`**: The main entry point that imports all other Sass partials in the correct order.
-
----
+* **`abstracts/`** for variables, functions, and mixins.
+* **`base/`** for resets, typography, and global styles.
+* **`components/`** for reusable components like `_button.scss`.
+* **`layouts/`** for major page structures like the header or sidebar.
+* **`main.scss`** to import all partials in the correct order.
 
 ## Project Structure
 
@@ -93,8 +75,6 @@ The `scss` folder is structured to keep styles organized and maintainable. It fo
 ├── package.json
 └── webpack.config.js
 ```
-
----
 
 ## Useful Links & Acknowledgements
 
