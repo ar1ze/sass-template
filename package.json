@@ -1,8 +1,28 @@
 {
-  "name": "sass-template",
+  "name": "webpack-sass-starter",
   "version": "1.0.0",
-  "description": "A front-end project starter with a scalable Sass structure and a pre-configured Webpack environment for a rapid development workflow",
+  "description": "A modern frontend starter with Webpack, Sass (7-1 architecture), and automated GitHub Pages deployment",
+  "author": "ar1ze",
+  "license": "isc",
   "private": true,
+  "keywords": [
+    "webpack",
+    "sass",
+    "scss",
+    "frontend",
+    "starter",
+    "template",
+    "boilerplate",
+    "7-1-architecture"
+  ],
+  "homepage": "https://github.com/ar1ze/webpack-sass-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ar1ze/webpack-sass-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ar1ze/webpack-sass-starter/issues"
+  },
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode=production",
@@ -10,17 +30,6 @@
     "deploy": "git checkout gh-pages && git merge main --no-edit && npm run build && git add dist -f && git commit -m \"chore: add automated github pages deployment\" && git subtree push --prefix dist origin gh-pages && git checkout main",
     "deploy:init": "git branch gh-pages && npm run deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ar1ze/sass-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ar1ze/sass-template/issues"
-  },
-  "homepage": "https://github.com/ar1ze/sass-template#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
