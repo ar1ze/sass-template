@@ -1,85 +1,78 @@
 # Sass & Webpack Project Starter
 
-A front-end starter template built with a scalable 7-1 Sass setup and Webpack for managing all your assets in development and production.
+A front-end starter template using the 7-1 Sass architecture and Webpack for asset management.
 
-## Getting Started
+## 🚀 Quick Start
 
-Follow these steps to create a new project based on this template.
-
-1.  **Create a new repository from this template**
-
-      * Click the green **`Use this template`** button on the GitHub page.
-      * Select **`Create a new repository`**.
-      * Give your new repository a name and create it.
-
-2.  **Clone your new repository**
-
-      * On the page of your newly created repository, click the `<> Code` button and copy the URL.
-      * Run the following command in your terminal:
-        ```bash
-        git clone https://github.com/your-username/your-new-repository-name.git
-        ```
-
-3.  **Navigate to the project directory**
-
-    ```bash
-    cd your-new-repository-name
-    ```
-
-4.  **Install dependencies**
-
-    ```bash
+1.  **Create Repository:** Click `Use this template` to create your new repository.
+2.  **Clone & Install:**
+    ```sh
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
     npm install
     ```
+3.  **Run Development Server:**
+    ```sh
+    npm start
+    ```
+    Your site is now running at `http://localhost:8080` with live reload.
 
-Now you are ready to run the development server with `npm start`\!
+-----
 
-## Available Scripts
-After installing the dependencies, you can use these commands:
+## 🛠️ Available Scripts
 
-* **`npm start`**
-  Launches the development server at `http://localhost:8080` with live reloading.
-  Any changes in the `src` folder will automatically refresh the browser.
+| Command | Description |
+| :--- | :--- |
+| `npm start` | Starts the dev server at `localhost:8080` with live reload. |
+| `npm run build` | Creates an optimized production build in the `dist` folder. |
+| `npm run deploy:init` | **(One-time setup)** Creates the `gh-pages` branch. |
+| `npm run deploy` | Deploys the `dist` folder contents to the `gh-pages` branch. |
 
-* **`npm run build`**
-  Builds an optimized production version of your project in the `dist` folder, ready for deployment.
+-----
 
-## Sass Architecture
+## 🚀 Deployment to GitHub Pages
 
-* **`abstracts/`** for variables, functions, and mixins.
-* **`base/`** for resets, typography, and global styles.
-* **`components/`** for reusable components like `_button.scss`.
-* **`layouts/`** for major page structures like the header or sidebar.
-* **`main.scss`** to import all partials in the correct order.
+### 1\. First-Time Setup
 
-## Project Structure
+1.  Initialize the deployment branch:
+    ```sh
+    npm run deploy:init
+    ```
+2.  In your GitHub repository, go to **Settings \> Pages**.
+3.  Set the **Source** to **Branch: `gh-pages`** and **Folder: \`/ (root)**. Save.
 
-```
-.
-├── dist/             # Bundled output (auto-generated)
-├── src/              # Your source code
-│   ├── assets/       # Images, fonts, etc.
-│   ├── index.js      # Main JavaScript entry point
-│   ├── scss/         # Sass files
-│   │   ├── abstracts/
-│   │   ├── base/
-│   │   ├── components/
-│   │   │   └── _button.scss
-│   │   ├── layouts/
-│   │   │   ├── _header.scss
-│   │   │   ├── _main.scss
-│   │   │   └── _sidebar.scss
-│   │   └── main.scss
-│   └── template.html # HTML template file
-│
-├── package.json
-└── webpack.config.js
+Your site will be live at `https://your-username.github.io/your-repo-name/`
+
+### 2\. Deploying Updates
+
+After you `git push` changes to your `main` branch, run:
+
+```sh
+npm run deploy
 ```
 
-## Useful Links & Acknowledgements
+This script automatically builds your project and pushes the production-ready `dist` folder contents to the `gh-pages` branch.
+
+-----
+
+## 📁 Project Structure
+
+This project uses the **7-1 Sass pattern**.
+
+  * `public/`: Static assets (favicons, etc.) copied directly to `dist`.
+  * `src/`: Your main source code.
+      * `assets/`: Fonts, images, and other static assets.
+      * `scss/`: All Sass files, organized by the 7-1 pattern (abstracts, base, components, layouts, pages).
+      * `index.js`: Main JavaScript entry point.
+      * `template.html`: The main HTML file template.
+      * `utils/`: JavaScript utility functions.
+  * `dist/`: The auto-generated production build folder (git-ignored).
+
+-----
+
+## 📚 Useful Links
 
   * [Sass Documentation](https://sass-lang.com/documentation)
-  * [Webpack Documentation](https://webpack.js.org/)
+  * [Webpack Documentation](https://webpack.js.org/concepts/)
   * [Sass Guidelines](https://sass-guidelin.es/)
-
-The Sass architecture was inspired by the [technoph1le/sass-template](https://github.com/technoph1le/sass-template) project.
+  * Architecture inspired by [technoph1le/sass-template](https://www.google.com/search?q=https://github.com/technoph1le/sass-template).
