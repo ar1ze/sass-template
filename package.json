@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "git checkout gh-pages && git merge main --no-edit && npm run build && git add dist -f && git commit -m \"chore: add automated github pages deployment\" && git subtree push --prefix dist origin gh-pages && git checkout main",
+    "deploy:init": "git branch gh-pages && npm run deploy"
   },
   "repository": {
     "type": "git",
