@@ -1,6 +1,6 @@
 # Sass & Webpack Project Starter
 
-A front-end starter template using the 7-1 Sass architecture and Webpack for asset management.
+A front-end starter template using Sass architecture and Webpack for asset management.
 
 ## 🚀 Quick Start
 
@@ -57,12 +57,12 @@ This script automatically builds your project and pushes the production-ready `d
 
 ## 📁 Project Structure
 
-This project uses the **7-1 Sass pattern**.
+This project uses a standard Sass pattern.
 
   * `public/`: Static assets (favicons, etc.) copied directly to `dist`.
   * `src/`: Your main source code.
       * `assets/`: Fonts, images, and other static assets.
-      * `scss/`: All Sass files, organized by the 7-1 pattern (abstracts, base, components, layouts, pages).
+      * `scss/`: All Sass files, organized by function (abstracts, base, components, layouts, pages).
       * `index.js`: Main JavaScript entry point.
       * `template.html`: The main HTML file template.
       * `utils/`: JavaScript utility functions.
@@ -75,4 +75,3 @@ This project uses the **7-1 Sass pattern**.
   * [Sass Documentation](https://sass-lang.com/documentation)
   * [Webpack Documentation](https://webpack.js.org/concepts/)
   * [Sass Guidelines](https://sass-guidelin.es/)
-  * Architecture inspired by [technoph1le/sass-template](https://www.google.com/search?q=https://github.com/technoph1le/sass-template).

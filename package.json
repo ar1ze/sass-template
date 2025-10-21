@@ -1,7 +1,7 @@
 {
   "name": "webpack-sass-starter",
   "version": "1.0.0",
-  "description": "A modern frontend starter with Webpack, Sass (7-1 architecture), and automated GitHub Pages deployment",
+  "description": "A frontend starter with Webpack, Sass, and automated GitHub Pages deployment",
   "author": "ar1ze",
   "license": "isc",
   "private": true,
@@ -11,9 +11,7 @@
     "scss",
     "frontend",
     "starter",
-    "template",
-    "boilerplate",
-    "7-1-architecture"
+    "template"
   ],
   "homepage": "https://github.com/ar1ze/webpack-sass-starter#readme",
   "repository": {
